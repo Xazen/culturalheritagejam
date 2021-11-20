@@ -9,7 +9,7 @@ internal class TextDialog
 
     public void Execute()
     {
-        LookUp.DialogSystem.ShowText(Texts, onCompleteAction);
+        LookUp.DialogController.ShowText(Texts, onCompleteAction);
     }
 
     public void OnComplete(Action action)

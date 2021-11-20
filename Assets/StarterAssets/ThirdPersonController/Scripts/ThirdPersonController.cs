@@ -58,6 +58,8 @@ namespace StarterAssets
 		public float CameraAngleOverride = 0.0f;
 		[Tooltip("For locking the camera position on all axis")]
 		public bool LockCameraPosition = false;
+		public float CameraSensitivityX = 30;
+		public float CameraSensitivityY = 30;
 
 		// cinemachine
 		private float _cinemachineTargetYaw;
@@ -87,7 +89,7 @@ namespace StarterAssets
 		private StarterAssetsInputs _input;
 		private GameObject _mainCamera;
 
-		private const float _threshold = 0.01f;
+		private const float _threshold = 0.000001f;
 
 		private bool _hasAnimator;
 
@@ -152,10 +154,12 @@ namespace StarterAssets
 		private void CameraRotation()
 		{
 			// if there is an input and camera position is not fixed
-			if (_input.look.sqrMagnitude >= _threshold && !LockCameraPosition)
+			if (!LockCameraPosition)
 			{
-				_cinemachineTargetYaw += _input.look.x * Time.deltaTime;
-				_cinemachineTargetPitch += _input.look.y * Time.deltaTime;
+				var mouseX = Input.GetAxisRaw("Mouse X");
+				var mouseY = -Input.GetAxisRaw("Mouse Y");
+				_cinemachineTargetYaw += mouseX * CameraSensitivityX * Time.deltaTime;
+				_cinemachineTargetPitch += mouseY * CameraSensitivityY * Time.deltaTime;
 			}
 
 			// clamp our rotations so our values are limited 360 degrees
@@ -163,7 +167,8 @@ namespace StarterAssets
 			_cinemachineTargetPitch = ClampAngle(_cinemachineTargetPitch, BottomClamp, TopClamp);
 
 			// Cinemachine will follow this target
-			CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch + CameraAngleOverride, _cinemachineTargetYaw, 0.0f);
+			var transformRotation = Quaternion.Euler(_cinemachineTargetPitch + CameraAngleOverride, _cinemachineTargetYaw, 0.0f);
+			CinemachineCameraTarget.transform.rotation = transformRotation;
 		}
 
 		private void Move()

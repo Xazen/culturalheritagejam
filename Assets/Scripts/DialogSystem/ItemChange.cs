@@ -1,4 +1,5 @@
 ﻿using System;
+using DefaultNamespace;
 using UnityEngine;
 
 [Serializable]
@@ -9,8 +10,9 @@ internal class ItemChange
 
     public void Execute()
     {
-        if (itemTag != ItemTag.None)
+        if (itemTag != ItemTag.Fallback)
         {
+            LookUp.InventorySystem.UpdateState(itemTag, itemState);
             Debug.Log($"Will update {itemTag} to {itemState}");
         }
     }

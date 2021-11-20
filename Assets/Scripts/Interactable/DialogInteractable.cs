@@ -1,3 +1,4 @@
+using System.Linq;
 using DefaultNamespace;
 using DefaultNamespace.Interactable;
 using UnityEngine;
@@ -5,18 +6,43 @@ using UnityEngine;
 public class DialogInteractable : Interactable
 {
     [SerializeField]
-    private DialogComponent dialogComponent;
+    private DialogComponent[] dialogComponents;
 
     public override void Interact()
     {
-        if (dialogComponent.Condition.IsValid())
+        foreach (var dialogComponent in dialogComponents)
         {
+            if (dialogComponent.Conditions.Any(dialogComponentCondition => !dialogComponentCondition.IsValid()))
+            {
+                return;
+            }
+
             dialogComponent.DialogText.OnComplete(() =>
             {
-                dialogComponent.Change.Execute();
+                foreach (var change in dialogComponent.Changes)
+                {
+                    change.Execute();
+                }
                 LookUp.PlayerInput.enabled = true;
             });
+
             dialogComponent.DialogText.Execute();
+            return;
         }
+    }
+
+    public override bool IsAnyInteractable()
+    {
+        foreach (var dialogComponent in dialogComponents)
+        {
+            if (dialogComponent.Conditions.Any(condition => !condition.IsValid()))
+            {
+                continue;
+            }
+
+            return true;
+        }
+
+        return false;
     }
 }

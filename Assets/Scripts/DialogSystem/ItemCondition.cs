@@ -1,4 +1,5 @@
 ﻿using System;
+using DefaultNamespace;
 
 [Serializable]
 internal class ItemCondition
@@ -8,6 +9,6 @@ internal class ItemCondition
 
     public bool IsValid()
     {
-        return itemTag == ItemTag.None && true;
+        return itemTag == ItemTag.Fallback || LookUp.InventorySystem.IsItemState(itemTag, itemState);
     }
 }

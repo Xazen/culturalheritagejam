@@ -1,4 +1,4 @@
-﻿internal enum ItemState
+﻿public enum ItemState
 {
     None,
     Unknown,

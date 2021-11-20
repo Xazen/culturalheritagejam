@@ -36,8 +36,15 @@ public class Interactor : MonoBehaviour
             canInteract = hit.transform.gameObject.layer == Layers.Interactable; 
             if (canInteract)
             {
-                targetObject = hit.transform.gameObject;
-                print("There is something in front of the object!");
+                var hitObject = hit.transform.gameObject;
+                var interactable = hitObject.GetComponent<Interactable>() as IInteractable;
+                bool anyValidInteractables = interactable.IsAnyInteractable();
+                canInteract = anyValidInteractables;
+
+                if (anyValidInteractables)
+                {
+                    targetObject = hit.transform.gameObject;
+                }
             }
         }
         else

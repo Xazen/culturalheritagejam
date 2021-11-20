@@ -3,7 +3,7 @@
 [Serializable]
 internal class DialogComponent
 {
-    public ItemCondition Condition;
+    public ItemCondition[] Conditions;
     public TextDialog DialogText;
-    public ItemChange Change;
+    public ItemChange[] Changes;
 }
