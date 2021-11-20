@@ -1,3 +1,4 @@
+using DefaultNamespace;
 using DefaultNamespace.Interactable;
 using UnityEngine;
 
@@ -10,7 +11,11 @@ public class DialogInteractable : Interactable
     {
         if (dialogComponent.Condition.IsValid())
         {
-            dialogComponent.DialogText.OnComplete(() => dialogComponent.Change.Execute());
+            dialogComponent.DialogText.OnComplete(() =>
+            {
+                dialogComponent.Change.Execute();
+                LookUp.PlayerInput.enabled = true;
+            });
             dialogComponent.DialogText.Execute();
         }
     }

@@ -1,5 +1,5 @@
 ﻿using System;
-using UnityEngine;
+using DefaultNamespace;
 
 [Serializable]
 internal class TextDialog
@@ -9,11 +9,7 @@ internal class TextDialog
 
     public void Execute()
     {
-        foreach (var text in Texts)
-        {
-            Debug.Log(text);
-        }
-        onCompleteAction.Invoke();
+        LookUp.DialogSystem.ShowText(Texts, onCompleteAction);
     }
 
     public void OnComplete(Action action)

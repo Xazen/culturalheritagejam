@@ -1,4 +1,3 @@
-using System;
 using DefaultNamespace;
 using DefaultNamespace.Interactable;
 using UnityEngine;
@@ -18,6 +17,7 @@ public class Interactor : MonoBehaviour
         {
             var interactable = targetObject.GetComponent<Interactable>() as IInteractable;
             interactable.Interact();
+            LookUp.PlayerInput.enabled = false;
         }
     }
 

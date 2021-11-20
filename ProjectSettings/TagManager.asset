@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - CinemachineTarget
+  - Dialog
+  - Inventory
+  - MessageHub
   layers:
   - Default
   - TransparentFX
