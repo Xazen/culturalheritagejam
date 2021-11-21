@@ -11,6 +11,7 @@ public class LookUpSetup : MonoBehaviour
     [SerializeField] private EventSystem eventSystem;
     [SerializeField] private Transform abuelaSpawnPoint;
     [SerializeField] private GameObject player;
+    [SerializeField] private CharacterController characterController;
     [SerializeField] private GameObject pauseScreen;
     [SerializeField] private DialogOptions dialogOptions;
     
@@ -23,6 +24,7 @@ public class LookUpSetup : MonoBehaviour
         LookUp.Player = player;
         LookUp.PauseScreen = pauseScreen;
         LookUp.DialogOptions = dialogOptions;
+        LookUp.CharacterController = characterController;
         LookUp.MessageHub = new MessageHub();
         LookUp.InventorySystem = new InventorySystem();
         

@@ -1,3 +1,4 @@
+using System;
 using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -16,8 +17,19 @@ public class DialogOptions : MonoBehaviour
     
     public void GoToAbuela()
     {
+        var characterController = LookUp.CharacterController;
+        characterController.enabled = false;
         var target = LookUp.AbuelaSpawnPoint.transform;
         LookUp.Player.transform.position = target.position;
         LookUp.Player.transform.rotation = target.rotation;
+        characterController.enabled = true;
+    }
+
+    private void Update()
+    {
+        if (LookUp.PlayerInput.actions[InputActions.Pause].WasPerformedThisFrame())
+        {
+            OpenPause();
+        }
     }
 }

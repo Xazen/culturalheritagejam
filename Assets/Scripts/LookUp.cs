@@ -13,6 +13,7 @@ namespace DefaultNamespace
         public static EventSystem EventSystem { get; set; }
         public static Transform AbuelaSpawnPoint { get; set; }
         public static GameObject Player { get; set; }
+        public static CharacterController CharacterController { get; set; }
         public static GameObject PauseScreen { get; set; }
         public static DialogOptions DialogOptions { get; set; }
     }
