@@ -673,6 +673,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e688f548ca357f7428811ee25eb52690, type: 3}
+--- !u!4 &557797294 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3135347936705083710, guid: 9085c388306cf7b4893997cf7b4f407c, type: 3}
+  m_PrefabInstance: {fileID: 908432717025721056}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &746515186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,7 +1417,7 @@ MonoBehaviour:
   dialogController: {fileID: 782495107}
   playerInput: {fileID: 1294687410}
   eventSystem: {fileID: 832394561}
-  abuelaSpawnPoint: {fileID: 2145327938}
+  abuelaSpawnPoint: {fileID: 557797294}
   player: {fileID: 1135835713}
   characterController: {fileID: 7433689323739039177}
   pauseScreen: {fileID: 2070487710}
@@ -3658,11 +3663,6 @@ Light:
   m_CorrespondingSourceObject: {fileID: 8877301348414361720, guid: 70bd5310709900d4a93047e50310a304, type: 3}
   m_PrefabInstance: {fileID: 8877301347455348968}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2145327938 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5518690217087700433, guid: a7a0d3b6a5a5bba4bb6429e8becf64d6, type: 3}
-  m_PrefabInstance: {fileID: 5518690216051775123}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &908432717025721056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3672,7 +3672,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3135347936812298080, guid: 9085c388306cf7b4893997cf7b4f407c, type: 3}
       propertyPath: m_Name
-      value: Abuelas House Intro
+      value: Abuelas House
       objectReference: {fileID: 0}
     - target: {fileID: 3135347936812298081, guid: 9085c388306cf7b4893997cf7b4f407c, type: 3}
       propertyPath: m_RootOrder
