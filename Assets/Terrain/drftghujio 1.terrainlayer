@@ -6,8 +6,8 @@ TerrainLayer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: drftghujio
-  m_DiffuseTexture: {fileID: 2800000, guid: bd572797c0c3fa544a5c1467ce1a0d8f, type: 3}
+  m_Name: drftghujio 1
+  m_DiffuseTexture: {fileID: 2800000, guid: ae1eb17c03f71e04eab016d93987b2c5, type: 3}
   m_NormalMapTexture: {fileID: 0}
   m_MaskMapTexture: {fileID: 0}
   m_TileSize: {x: 5, y: 5}
