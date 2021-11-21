@@ -18,14 +18,11 @@ namespace DefaultNamespace
 
         private void Start()
         {
-            InitSlot(ItemTag.Bread);
-            InitSlot(ItemTag.Candle);
-            InitSlot(ItemTag.Tamales);
-            InitSlot(ItemTag.Flowers);
-            InitSlot(ItemTag.Salt);
-            InitSlot(ItemTag.SugarSkull);
+            foreach (var itemTag in spriteByItemTag.Keys)
+            {
+                InitSlot(itemTag);
+            }
 
-            LookUp.MessageHub.OnItemUpdated += OnItemUpdate;
             LookUp.MessageHub.OnItemUpdated += OnItemUpdate;
         }
 

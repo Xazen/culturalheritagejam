@@ -14,7 +14,7 @@ public class DialogInteractable : Interactable
         {
             if (dialogComponent.Conditions.Any(dialogComponentCondition => !dialogComponentCondition.IsValid()))
             {
-                return;
+                continue;
             }
 
             dialogComponent.DialogText.OnComplete(() =>

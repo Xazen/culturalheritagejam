@@ -44,13 +44,15 @@ public class Interactor : MonoBehaviour
             if (canInteract)
             {
                 var hitObject = hit.transform.gameObject;
-                var interactable = hitObject.GetComponent<Interactable>() as IInteractable;
-                bool anyValidInteractables = interactable.IsAnyInteractable();
-                canInteract = anyValidInteractables;
-
-                if (anyValidInteractables)
+                var interactables = hitObject.GetComponents<Interactable>();
+                foreach (var interactable in interactables)
                 {
-                    targetObject = hit.transform.gameObject;
+                    if (interactable.IsAnyInteractable())
+                    {
+                        canInteract = true;
+                        targetObject = hit.transform.gameObject;
+                        break;
+                    }
                 }
             }
         }

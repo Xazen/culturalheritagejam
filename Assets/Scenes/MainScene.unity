@@ -605,15 +605,15 @@ MonoBehaviour:
       elementIcon: {fileID: 0}
     reqReferences: {fileID: 0}
     isExpanded: 1
-    _keyValues: 010000000200000003000000040000000500000006000000
-    _keys: 010000000200000003000000040000000500000006000000
+    _keyValues: 020000000600000005000000010000000400000003000000
+    _keys: 020000000600000005000000010000000400000003000000
     _values:
-    - {fileID: 21300000, guid: ca3df4a015a7b5a44a9770661e4fdf6c, type: 3}
     - {fileID: 21300000, guid: 8c2d625e51931e94a8cfc746392cdb1e, type: 3}
-    - {fileID: 21300000, guid: 62d9c97e515fd2845a7bfe289b3dfa69, type: 3}
-    - {fileID: 21300000, guid: 8592b282396622242b2dd1e0f7cbaa6d, type: 3}
-    - {fileID: 21300000, guid: 42b367c2510c6174f9439ecd02edf33c, type: 3}
     - {fileID: 21300000, guid: 35b90148246655248b9c52690db10887, type: 3}
+    - {fileID: 21300000, guid: 42b367c2510c6174f9439ecd02edf33c, type: 3}
+    - {fileID: 21300000, guid: ca3df4a015a7b5a44a9770661e4fdf6c, type: 3}
+    - {fileID: 21300000, guid: 8592b282396622242b2dd1e0f7cbaa6d, type: 3}
+    - {fileID: 21300000, guid: 62d9c97e515fd2845a7bfe289b3dfa69, type: 3}
   itemContainer: {fileID: 496028513}
   itemSlotPrefab: {fileID: 2795821682947922150, guid: 1fa084991fee7cc428bd7e665cc97855, type: 3}
 --- !u!1001 &518278062
@@ -1850,9 +1850,9 @@ MonoBehaviour:
       - 'This stands for Christianity, since this tradition has become a blend of
         Catholic tradition and Mexican mysticism.  '
       - "But oh my, it seems like we\u2019re still missing some stuff\u2026  "
-      - "ni\xF1ita can you please help me and get some things for the ofrenda from
+      - "Ni\xF1ita can you please help me and get some things for the ofrenda from
         the market? Marigold flowers sell out fast these days, you should go there
-        first! (Flowers unknown->known) "
+        first!"
     Changes:
     - itemTag: 2
       itemState: 2
@@ -2090,7 +2090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -212.26442
+      value: -206.36441
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2098,7 +2098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -222.59418
+      value: -218.17328
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2229,7 +2229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -212.26442
+      value: -206.36441
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2237,7 +2237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -222.59418
+      value: -218.17328
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3911,7 +3911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5849621210784344265, guid: 4e1d894340f9ff24b81e984ae3b63b8f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 250
+      value: 255.9
       objectReference: {fileID: 0}
     - target: {fileID: 5849621210784344265, guid: 4e1d894340f9ff24b81e984ae3b63b8f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3919,7 +3919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5849621210784344265, guid: 4e1d894340f9ff24b81e984ae3b63b8f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 250
+      value: 256.45
       objectReference: {fileID: 0}
     - target: {fileID: 5849621210784344265, guid: 4e1d894340f9ff24b81e984ae3b63b8f, type: 3}
       propertyPath: m_LocalRotation.w
