@@ -1,18 +1,19 @@
 ﻿using System;
 using DefaultNamespace;
+using UnityEngine.Events;
 
 [Serializable]
-internal class TextDialog
+public class TextDialog
 {
     public string[] Texts;
-    private Action onCompleteAction;
+    private UnityAction onCompleteAction;
 
     public void Execute()
     {
         LookUp.DialogController.ShowText(Texts, onCompleteAction);
     }
 
-    public void OnComplete(Action action)
+    public void OnComplete(UnityAction action)
     {
         onCompleteAction = action;
     }

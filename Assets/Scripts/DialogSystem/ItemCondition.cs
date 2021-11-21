@@ -2,7 +2,7 @@
 using DefaultNamespace;
 
 [Serializable]
-internal class ItemCondition
+public class ItemCondition
 {
     public ItemTag itemTag;
     public ItemState itemState;
