@@ -2,14 +2,11 @@
 {
     Fallback,
     
-    Flowers,
     SugarSkull,
-    Photo,
-    Bread,
+    Flowers,
+    Tamales,
     
-    Candle,
-    Garlands,
+    Bread,
     Salt,
-    Cross,
-    Fragrance
+    Candle
 }

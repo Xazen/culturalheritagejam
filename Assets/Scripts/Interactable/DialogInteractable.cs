@@ -23,6 +23,9 @@ public class DialogInteractable : Interactable
                 {
                     change.Execute();
                 }
+
+                dialogComponent.UnityEvent?.Invoke();
+                
                 LookUp.PlayerInput.enabled = true;
             });
 

@@ -9,6 +9,12 @@ TagManager:
   - Inventory
   - MessageHub
   - EventSystem
+  - Bread
+  - Candle
+  - Tamales
+  - Flowers
+  - Salt
+  - SugarSkull
   layers:
   - Default
   - TransparentFX
