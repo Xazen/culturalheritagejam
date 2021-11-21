@@ -2836,6 +2836,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8877301348414361703, guid: 70bd5310709900d4a93047e50310a304, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8877301348556289317, guid: 70bd5310709900d4a93047e50310a304, type: 3}
       propertyPath: multipleChoiceComponent.Array.data[0].DialogText.Choice2.Action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
