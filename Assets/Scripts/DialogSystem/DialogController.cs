@@ -7,6 +7,7 @@ using DG.Tweening.Plugins.Options;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
@@ -41,6 +42,7 @@ public class DialogController : MonoBehaviour
         textAction.Enable();
         this.completeCallback = completeCallback;
         dialogPanel.SetActive(true);
+        LookUp.EventSystem.SetSelectedGameObject(dialogPanel);
         this.texts = texts;
         textIndex = 0;
         ShowText(texts[textIndex]);
@@ -89,6 +91,7 @@ public class DialogController : MonoBehaviour
                     {
                         SetupButton(choice1Btn, choice1Text, choice1);
                         SetupButton(choice2Btn, choice2Text, choice2);
+                        LookUp.EventSystem.SetSelectedGameObject(choice1Btn.gameObject);
                         return;
                     }
                     
@@ -112,14 +115,16 @@ public class DialogController : MonoBehaviour
         text.text = choice.ButtonText;
         button.onClick.AddListener(() =>
         {
-            choice1 = null;
-            choice2 = null;
             choice1Btn.gameObject.SetActive(false);
             choice2Btn.gameObject.SetActive(false);
+            dialogText.text = "";
             ShowText(choice.Texts, () =>
             {
+                var tempChoice = choice;
+                choice1 = null;
+                choice2 = null;
                 LookUp.PlayerInput.enabled = true;
-                choice.Action?.Invoke();
+                tempChoice.Action?.Invoke();
             });
         });
     }

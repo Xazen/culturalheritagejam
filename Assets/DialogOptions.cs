@@ -1,14 +1,23 @@
+using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogOptions : MonoBehaviour
 {
-    public void SwitchScene()
+    public void SwitchToMainMenu()
     {
-        Debug.Log("Switch Scene");
+        SceneManager.LoadScene(SceneConst.MainMenu);
     }
     
-    public void SomethingElse()
+    public void OpenPause()
     {
-        Debug.Log("SomethingElse");
+        LookUp.PauseScreen.SetActive(true);
+    }
+    
+    public void GoToAbuela()
+    {
+        var target = LookUp.AbuelaSpawnPoint.transform;
+        LookUp.Player.transform.position = target.position;
+        LookUp.Player.transform.rotation = target.rotation;
     }
 }
