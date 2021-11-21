@@ -91,6 +91,7 @@ public class DialogController : MonoBehaviour
                     {
                         SetupButton(choice1Btn, choice1Text, choice1);
                         SetupButton(choice2Btn, choice2Text, choice2);
+                        textAction.Disable();
                         LookUp.EventSystem.SetSelectedGameObject(choice1Btn.gameObject);
                         return;
                     }
@@ -115,6 +116,7 @@ public class DialogController : MonoBehaviour
         text.text = choice.ButtonText;
         button.onClick.AddListener(() =>
         {
+            textAction.Enable();
             choice1Btn.gameObject.SetActive(false);
             choice2Btn.gameObject.SetActive(false);
             dialogText.text = "";

@@ -2,7 +2,7 @@
 {
     public class SceneConst
     {
-        public static readonly int Game = 0;
-        public static readonly int MainMenu = 1;
+        public static readonly string Game = "MainScene";
+        public static readonly string MainMenu = "MainMenu";
     }
 }

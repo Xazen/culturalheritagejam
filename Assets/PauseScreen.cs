@@ -1,4 +1,3 @@
-using System;
 using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,11 +16,18 @@ public class PauseScreen : MonoBehaviour
 
     private void OnEnable()
     {
-        LookUp.PlayerInput.enabled = false;
+        if (LookUp.PlayerInput != null)
+        {
+            LookUp.EventSystem.SetSelectedGameObject(continueButton.gameObject);
+            LookUp.PlayerInput.enabled = false;
+        }
     }
 
     private void OnDisable()
     {
-        LookUp.PlayerInput.enabled = true;
+        if (LookUp.PlayerInput != null)
+        {
+            LookUp.PlayerInput.enabled = true;
+        }
     }
 }

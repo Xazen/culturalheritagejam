@@ -10,6 +10,16 @@ public class DialogOptions : MonoBehaviour
         SceneManager.LoadScene(SceneConst.MainMenu);
     }
     
+    public void SwitchToGame()
+    {
+        SceneManager.LoadScene(SceneConst.Game);
+    }
+    
+    public void ExitApplication()
+    {
+        Application.Quit();
+    }
+    
     public void OpenPause()
     {
         LookUp.PauseScreen.SetActive(true);
@@ -27,7 +37,7 @@ public class DialogOptions : MonoBehaviour
 
     private void Update()
     {
-        if (LookUp.PlayerInput.actions[InputActions.Pause].WasPerformedThisFrame())
+        if (LookUp.PlayerInput != null && LookUp.PlayerInput.actions[InputActions.Pause].WasPerformedThisFrame())
         {
             OpenPause();
         }
