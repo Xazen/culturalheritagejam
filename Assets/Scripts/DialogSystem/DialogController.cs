@@ -73,6 +73,7 @@ public class DialogController : MonoBehaviour
                     // Show next text
                     dialogText.text = "";
                     ShowText(texts[textIndex]);
+                    LookUp.AudioCollection.PlayButtonSound();
                 }
                 else
                 {
@@ -116,6 +117,7 @@ public class DialogController : MonoBehaviour
         text.text = choice.ButtonText;
         button.onClick.AddListener(() =>
         {
+            LookUp.AudioCollection.PlayButtonSound();
             textAction.Enable();
             choice1Btn.gameObject.SetActive(false);
             choice2Btn.gameObject.SetActive(false);

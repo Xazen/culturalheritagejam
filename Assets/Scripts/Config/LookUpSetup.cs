@@ -14,6 +14,7 @@ public class LookUpSetup : MonoBehaviour
     [SerializeField] private CharacterController characterController;
     [SerializeField] private GameObject pauseScreen;
     [SerializeField] private DialogOptions dialogOptions;
+    [SerializeField] private AudioCollection audioCollection;
     
     private void Start()
     {
@@ -25,6 +26,7 @@ public class LookUpSetup : MonoBehaviour
         LookUp.PauseScreen = pauseScreen;
         LookUp.DialogOptions = dialogOptions;
         LookUp.CharacterController = characterController;
+        LookUp.AudioCollection = audioCollection;
         LookUp.MessageHub = new MessageHub();
         LookUp.InventorySystem = new InventorySystem();
         

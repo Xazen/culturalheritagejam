@@ -13,6 +13,10 @@ internal class ItemChange
         if (itemTag != ItemTag.Fallback)
         {
             LookUp.InventorySystem.UpdateState(itemTag, itemState);
+            if (itemState == ItemState.Collected)
+            {
+                LookUp.AudioCollection.PlayItemGet();
+            }
             Debug.Log($"Will update {itemTag} to {itemState}");
         }
     }

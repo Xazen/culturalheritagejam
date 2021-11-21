@@ -16,5 +16,6 @@ namespace DefaultNamespace
         public static CharacterController CharacterController { get; set; }
         public static GameObject PauseScreen { get; set; }
         public static DialogOptions DialogOptions { get; set; }
+        public static AudioCollection AudioCollection { get; set; }
     }
 }

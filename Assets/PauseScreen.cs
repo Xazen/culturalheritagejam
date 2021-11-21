@@ -10,8 +10,16 @@ public class PauseScreen : MonoBehaviour
     void Start()
     {
         gameObject.SetActive(false);
-        continueButton.onClick.AddListener(() => gameObject.SetActive(false));
-        exitButton.onClick.AddListener(() => LookUp.DialogOptions.SwitchToMainMenu());
+        continueButton.onClick.AddListener(() =>
+        {
+            LookUp.AudioCollection.PlayButtonSound();
+            gameObject.SetActive(false);
+        });
+        exitButton.onClick.AddListener(() =>
+        {
+            LookUp.AudioCollection.PlayButtonSound();
+            LookUp.DialogOptions.SwitchToMainMenu();
+        });
     }
 
     private void OnEnable()
