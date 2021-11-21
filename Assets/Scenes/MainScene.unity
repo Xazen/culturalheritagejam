@@ -3297,6 +3297,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6261632913208917601, guid: 70bd5310709900d4a93047e50310a304, type: 3}
+      propertyPath: multipleChoiceComponent.Array.data[0].DialogText.Choice1.Action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1255646313}
+    - target: {fileID: 6261632913208917601, guid: 70bd5310709900d4a93047e50310a304, type: 3}
+      propertyPath: multipleChoiceComponent.Array.data[0].DialogText.Choice1.Action.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToAbuela
+      objectReference: {fileID: 0}
     - target: {fileID: 7860211370169363620, guid: 70bd5310709900d4a93047e50310a304, type: 3}
       propertyPath: m_IsActive
       value: 1
