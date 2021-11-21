@@ -20,12 +20,8 @@ namespace DefaultNamespace
         {
             InitSlot(ItemTag.Bread);
             InitSlot(ItemTag.Candle);
-            InitSlot(ItemTag.Cross);
-            InitSlot(ItemTag.Cross);
+            InitSlot(ItemTag.Tamales);
             InitSlot(ItemTag.Flowers);
-            InitSlot(ItemTag.Fragrance);
-            InitSlot(ItemTag.Garlands);
-            InitSlot(ItemTag.Photo);
             InitSlot(ItemTag.Salt);
             InitSlot(ItemTag.SugarSkull);
 

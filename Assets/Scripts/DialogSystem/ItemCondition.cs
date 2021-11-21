@@ -9,6 +9,7 @@ public class ItemCondition
 
     public bool IsValid()
     {
-        return itemTag == ItemTag.Fallback || LookUp.InventorySystem.IsItemState(itemTag, itemState);
+        return itemTag == ItemTag.Fallback || 
+               LookUp.InventorySystem.IsItemState(itemTag, itemState);
     }
 }

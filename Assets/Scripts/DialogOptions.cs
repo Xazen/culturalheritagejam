@@ -33,6 +33,7 @@ public class DialogOptions : MonoBehaviour
         LookUp.Player.transform.position = target.position;
         LookUp.Player.transform.rotation = target.rotation;
         characterController.enabled = true;
+        LookUp.MessageHub.InvokeOnOnEnterHome();
     }
 
     private void Update()

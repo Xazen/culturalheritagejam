@@ -3,7 +3,12 @@ guid: 664f15cacead9fc4a86ef63e1b3335e7
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rope_FRONT_1808
+    second: {fileID: 2100000, guid: daa992cc4c7320242ac162690facdc52, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -42,8 +47,8 @@ ModelImporter:
     sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
