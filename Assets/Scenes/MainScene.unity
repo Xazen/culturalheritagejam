@@ -625,7 +625,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e688f548ca357f7428811ee25eb52690, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e688f548ca357f7428811ee25eb52690, type: 3}
       propertyPath: m_LocalPosition.x
@@ -935,7 +935,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &811697630
 AudioSource:
@@ -1227,164 +1227,6 @@ Transform:
   m_Father: {fileID: 1757666513}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1069417224
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1069417228}
-  - component: {fileID: 1069417227}
-  - component: {fileID: 1069417226}
-  - component: {fileID: 1069417225}
-  - component: {fileID: 1069417229}
-  m_Layer: 7
-  m_Name: Calaveras
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!136 &1069417225
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069417224}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1069417226
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069417224}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1069417227
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069417224}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1069417228
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069417224}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 250.94, y: 0.796, z: 258.891}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1069417229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069417224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdc36d44a83e1b0409331f551e732239, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogComponents:
-  - Conditions:
-    - itemTag: 1
-      itemState: 1
-    DialogText:
-      Texts:
-      - "Our sugar skulls are the prettiest in town, y\u2019know. But I\u2019m rally
-        busy right now. Please come by later again and I\u2019ll tell you everything
-        about them! "
-      - 'Try go get something to ward off evil sprits first. '
-    Changes:
-    - itemTag: 5
-      itemState: 2
-    UnityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - Conditions:
-    - itemTag: 1
-      itemState: 2
-    DialogText:
-      Texts:
-      - 'Calaveras are probably one of the most recognizable symbols of Dia de los
-        Muertos.  '
-      - 'These skulls are often made of granulated sugar, meringue powder and water. '
-      - 'The mixture is molded into the shape of a skull and then decorated with
-        bright colors and ornamentation.  '
-      - 'The skulls represent the people who have passed and the sugar symbolizes
-        the sweetness of life! '
-      - 'Did you prepare something to eat for your loved ones? '
-    Changes:
-    - itemTag: 1
-      itemState: 3
-    - itemTag: 4
-      itemState: 2
-    UnityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - Conditions:
-    - itemTag: 1
-      itemState: 3
-    DialogText:
-      Texts:
-      - "Oh my, You\u2019re a real sweet tooth little one.  "
-    Changes: []
-    UnityEvent:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!1 &1070859042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,7 +1258,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1070859044
 AudioSource:
@@ -1974,242 +1816,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492859603}
   m_CullTransparentMesh: 1
---- !u!1 &1519822882
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1519822886}
-  - component: {fileID: 1519822885}
-  - component: {fileID: 1519822884}
-  - component: {fileID: 1519822883}
-  - component: {fileID: 1519822888}
-  - component: {fileID: 1519822887}
-  - component: {fileID: 1519822889}
-  m_Layer: 7
-  m_Name: Tata
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!136 &1519822883
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519822882}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1519822884
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519822882}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1519822885
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519822882}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1519822886
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519822882}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 257.41998, y: 0.796, z: 258.891}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1519822887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519822882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 551ddd1891ed470f87c5a9c2feb6051d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  multipleChoiceComponent:
-  - Conditions:
-    - itemTag: 3
-      itemState: 3
-    DialogText:
-      Texts:
-      - Are you done now?
-      Choice1:
-        Texts:
-        - 'Good work, lets go inside and eat our favorite dish together once again! '
-        ButtonText: I'm done
-        Action:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 1255646313}
-              m_TargetAssemblyTypeName: DialogOptions, Assembly-CSharp
-              m_MethodName: GoToAbuela
-              m_Mode: 1
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
-      Choice2:
-        Texts:
-        - Ok, just let me know when you are ready.
-        ButtonText: Not yet
-        Action:
-          m_PersistentCalls:
-            m_Calls: []
---- !u!114 &1519822888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519822882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdc36d44a83e1b0409331f551e732239, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogComponents:
-  - Conditions:
-    - itemTag: 2
-      itemState: 1
-    DialogText:
-      Texts:
-      - 'We need to decorate our Ofrenda! An Ofrenda is a kind of altar with multiple
-        levels. 2 levels usually represent the division between the earth and the
-        sky.  '
-      - '3 levels represent the sky, the earth and purgatory.7 levels relate to the
-        seven levels that a soul must traverse before reaching heaven. It also relates
-        to the Seven Deadly Sins. '
-      - "We want to remember our beloved Abuela and invite her to this special occasion
-        - that\u2019s why we need some things to make her journey easier "
-      - 'I already placed some paper Picado. The paper stands for the sky and symbolizes
-        the fragility of life and the union between life and death.  '
-      - "Also We need to place a photo of Abuela or else she won\u2019t be drawn
-        to the altar and can\u2019t cross over, you know? "
-      - 'Another thing your mom already placed at the Ofrenda is the cross.  '
-      - 'This stands for Christianity, since this tradition has become a blend of
-        Catholic tradition and Mexican mysticism.  '
-      - "But oh my, it seems like we\u2019re still missing some stuff\u2026  "
-      - "Ni\xF1ita can you please help me and get some things for the ofrenda from
-        the market? Marigold flowers sell out fast these days, you should go there
-        first!"
-    Changes:
-    - itemTag: 2
-      itemState: 2
-    UnityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - Conditions:
-    - itemTag: 2
-      itemState: 3
-    - itemTag: 1
-      itemState: 3
-    - itemTag: 3
-      itemState: 1
-    DialogText:
-      Texts:
-      - "Abuela loved to cook. It took her a long time to prepare our loved tamales,
-        but she didn\u2019t care.  "
-      - "She didn\u2019t wish for anything else than seeing you enjoying them so
-        much! "
-      - "This time I prepared some tamales\u2026I tried my best, let\u2019s just
-        hope Abuela likes my version!   "
-      - 'Tamales are actually a part of ritual offerings because corn is a really
-        important resource.  '
-      - "I also prepared a drink called Atole which is also made from corn. This
-        way abuela won\u2019t be thirsty after her journey.  "
-      - "Let\u2019s go inside and eat our favorite dish together once again!  "
-    Changes:
-    - itemTag: 3
-      itemState: 3
-    UnityEvent:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!114 &1519822889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519822882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdc36d44a83e1b0409331f551e732239, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogComponents:
-  - Conditions: []
-    DialogText:
-      Texts:
-      - You've got everything we need?
-    Changes: []
-    UnityEvent:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!1 &1577267152
 GameObject:
   m_ObjectHideFlags: 0
@@ -2394,7 +2000,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -205.0344
+      value: -213.97902
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2402,11 +2008,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -220.0033
+      value: -217.80775
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.50978446
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2414,11 +2020,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.86030215
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2533,7 +2139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -205.0344
+      value: -213.97902
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2541,7 +2147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -220.0033
+      value: -217.80775
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2661,156 +2267,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826292784}
   m_CullTransparentMesh: 1
---- !u!1 &1847380061
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1847380065}
-  - component: {fileID: 1847380064}
-  - component: {fileID: 1847380063}
-  - component: {fileID: 1847380062}
-  - component: {fileID: 1847380066}
-  m_Layer: 7
-  m_Name: Bread
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!136 &1847380062
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1847380061}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1847380063
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1847380061}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1847380064
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1847380061}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1847380065
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1847380061}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 249.59, y: 0.796, z: 258.891}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1847380066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1847380061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdc36d44a83e1b0409331f551e732239, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogComponents:
-  - Conditions:
-    - itemTag: 4
-      itemState: 1
-    DialogText:
-      Texts:
-      - 'The bread is not ready yet, please visit again later! '
-    Changes: []
-    UnityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - Conditions:
-    - itemTag: 4
-      itemState: 2
-    DialogText:
-      Texts:
-      - 'Here you go sweetheart. Pan de muertos is a soft and sweet bread designed
-        with a circle and limbs to mimic the shape of a skull and crossbones. '
-      - 'It has this special smell because we add Anis!  Place it next to something
-        your abuela liked. '
-    Changes:
-    - itemTag: 4
-      itemState: 3
-    UnityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - Conditions:
-    - itemTag: 4
-      itemState: 3
-    DialogText:
-      Texts:
-      - "No Refund! Our pan de muertos is the best in town, y\u2019know. This recipe
-        was passed on for many generations now! "
-    Changes:
-    - itemTag: 4
-      itemState: 3
-    UnityEvent:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!1 &1874621112
 GameObject:
   m_ObjectHideFlags: 0
@@ -3190,148 +2646,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968287907}
   m_CullTransparentMesh: 1
---- !u!1 &1980103164
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1980103168}
-  - component: {fileID: 1980103167}
-  - component: {fileID: 1980103166}
-  - component: {fileID: 1980103165}
-  - component: {fileID: 1980103169}
-  m_Layer: 7
-  m_Name: Flower
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!136 &1980103165
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1980103164}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1980103166
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1980103164}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1980103167
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1980103164}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1980103168
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1980103164}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 255.89427, y: 0.796, z: 258.891}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1980103169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1980103164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdc36d44a83e1b0409331f551e732239, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogComponents:
-  - Conditions:
-    - itemTag: 2
-      itemState: 2
-    DialogText:
-      Texts:
-      - 'Hi little one. Do you want to buy flowers for the festival too?  '
-      - 'The flowers are not just a beautiful addition to the altar because they
-        are bright as the sun.  '
-      - 'The scent and look of these bright orange blooms help attract souls to the
-        altar.  '
-      - "Let\u2019s just hope they won\u2019t get lost along the way because it\u2019s
-        too dark\u2026 "
-    Changes:
-    - itemTag: 6
-      itemState: 2
-    - itemTag: 2
-      itemState: 3
-    UnityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - Conditions:
-    - itemTag: 2
-      itemState: 3
-    DialogText:
-      Texts:
-      - "You already have flowers! Marigolds are on high demand these days\u2026. "
-    Changes: []
-    UnityEvent:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!4 &2024863955 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
@@ -3657,306 +2971,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &2119439123
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2119439127}
-  - component: {fileID: 2119439126}
-  - component: {fileID: 2119439125}
-  - component: {fileID: 2119439124}
-  - component: {fileID: 2119439128}
-  m_Layer: 7
-  m_Name: Salt
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!136 &2119439124
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119439123}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &2119439125
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119439123}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2119439126
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119439123}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &2119439127
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119439123}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 252.52, y: 0.796, z: 258.891}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2119439128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119439123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdc36d44a83e1b0409331f551e732239, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogComponents:
-  - Conditions:
-    - itemTag: 5
-      itemState: 1
-    DialogText:
-      Texts:
-      - "Hola ni\xF1ita! You\u2019re collecting things for the ofrenda? Do you already
-        have flowers? "
-    Changes: []
-    UnityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - Conditions:
-    - itemTag: 5
-      itemState: 2
-    DialogText:
-      Texts:
-      - 'Here you go, have some salt. For this special Day we usually place Salt
-        on a plat or in the pattern of a cross.  '
-      - "It helps to ward off evil spirits, so that the souls won\u2019t be corrupted!"
-      - 'But we also love sweet stuff on this special day! '
-    Changes:
-    - itemTag: 5
-      itemState: 3
-    - itemTag: 1
-      itemState: 2
-    UnityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - Conditions:
-    - itemTag: 5
-      itemState: 3
-    DialogText:
-      Texts:
-      - ' Really? Do you expect Sadako to haunt you tonight? Get something sweet
-        instead, will ya! '
-    Changes: []
-    UnityEvent:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!1 &2127792219
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2127792223}
-  - component: {fileID: 2127792222}
-  - component: {fileID: 2127792221}
-  - component: {fileID: 2127792220}
-  - component: {fileID: 2127792224}
-  m_Layer: 7
-  m_Name: Candle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!136 &2127792220
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127792219}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &2127792221
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127792219}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2127792222
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127792219}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &2127792223
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127792219}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 254.18, y: 0.796, z: 258.891}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2127792224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127792219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdc36d44a83e1b0409331f551e732239, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogComponents:
-  - Conditions:
-    - itemTag: 6
-      itemState: 1
-    DialogText:
-      Texts:
-      - "You\u2019re interested in our candles? You should get some flowers first
-        though. They sell out very fast!  "
-    Changes: []
-    UnityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - Conditions:
-    - itemTag: 6
-      itemState: 2
-    DialogText:
-      Texts:
-      - "Here, you\u2019ll need candles! They symbolize our love for our relatives
-        and the\u2019ll be the guiding light for their spirits. "
-      - "Don\u2019t forget to get something to ward off evil spirits! "
-    Changes:
-    - itemTag: 5
-      itemState: 2
-    - itemTag: 6
-      itemState: 3
-    UnityEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - Conditions:
-    - itemTag: 6
-      itemState: 3
-    DialogText:
-      Texts:
-      - 'You already bought a candle. Do you really need more? '
-    Changes: []
-    UnityEvent:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!108 &2138677392 stripped
 Light:
   m_CorrespondingSourceObject: {fileID: 8877301348414361720, guid: 70bd5310709900d4a93047e50310a304, type: 3}
@@ -4210,7 +3224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5849621210784344265, guid: 4e1d894340f9ff24b81e984ae3b63b8f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 257.23
+      value: 252.09
       objectReference: {fileID: 0}
     - target: {fileID: 5849621210784344265, guid: 4e1d894340f9ff24b81e984ae3b63b8f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4218,23 +3232,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5849621210784344265, guid: 4e1d894340f9ff24b81e984ae3b63b8f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 254.62
+      value: 251.07
       objectReference: {fileID: 0}
     - target: {fileID: 5849621210784344265, guid: 4e1d894340f9ff24b81e984ae3b63b8f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.50978446
       objectReference: {fileID: 0}
     - target: {fileID: 5849621210784344265, guid: 4e1d894340f9ff24b81e984ae3b63b8f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5849621210784344265, guid: 4e1d894340f9ff24b81e984ae3b63b8f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.86030215
       objectReference: {fileID: 0}
     - target: {fileID: 5849621210784344265, guid: 4e1d894340f9ff24b81e984ae3b63b8f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5849621210784344265, guid: 4e1d894340f9ff24b81e984ae3b63b8f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4242,7 +3256,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5849621210784344265, guid: 4e1d894340f9ff24b81e984ae3b63b8f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -241.29901
       objectReference: {fileID: 0}
     - target: {fileID: 5849621210784344265, guid: 4e1d894340f9ff24b81e984ae3b63b8f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
