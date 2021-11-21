@@ -15,9 +15,16 @@ public class Interactor : MonoBehaviour
     {
         if (canInteract && LookUp.PlayerInput.actions[InputActions.Action].WasPerformedThisFrame())
         {
-            var interactable = targetObject.GetComponent<Interactable>() as IInteractable;
-            interactable.Interact();
-            LookUp.PlayerInput.enabled = false;
+            var interactables = targetObject.GetComponents<Interactable>();
+            foreach (var interactable in interactables)
+            {
+                if (interactable.IsAnyInteractable())
+                {
+                    interactable.Interact();
+                    LookUp.PlayerInput.enabled = false;
+                    return;
+                }
+            }
         }
     }
 
